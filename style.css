@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+
+body {
+    background: linear-gradient(white,#ff9e5e);
+}
+
+
+.container {
+    background-color: white;
+    border: 5px solid #ff9e5e;
+    border-radius: 7px;
+    width: 50%;
+    margin: 10px auto;
+    margin-bottom: 0;
+    height: 93vh;
+    overflow-y: scroll;
+}
+
+.logo {
+    max-width: 100px;
+    margin: auto;
+}
+
+.logo img {
+    width: 50px;
+    margin-top: 20px;
+}
+
+h1 {
+    color: #ff9e5e;
+    margin: 10px;
+    text-align: center;
+}
+
+.chat-container-1, .chat-container-2, .chat-container-3 {
+    display: flex;
+    margin: 20px 10px;
+}
+
+.chat {
+    border: 2px solid #ff9e5e;
+    border-radius: 47px;
+    background-color: #ff9e5e;
+    color: white;
+    padding: 5px 10px;
+}
+
+.message {
+    border: 2px solid #ff9e5e;
+    border-radius: 47px;
+    background-color: #ff9e5e;
+    color: white;
+    padding: 5px 10px;
+    display: flex;
+    margin: 20px 10px;
+}
+
+.left-pos {
+    left: 0;
+}
+
+.right-pos {
+    right: 0;
+}
+
+
+.chat-container-1 {
+    justify-content: end;
+}
+
+.chat-container-2 {
+    justify-content: start;
+}
+
+.chat-container-3 {
+    justify-content: end;
+}
+
+.send-container {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+}
+
+.send-container form {
+    /* border: 2px solid blue; */
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+#msg {
+    padding: 5px 7px;
+    border-radius: 7px;
+    border: 0;
+    width: 79%;
+}
+
+.btn {
+    cursor: pointer;
+    height: 100%;
+    padding: 5px 7px;
+    border: 0;
+    border-radius: 7px;
+    background-color: white;
+    color: #ff9e5e;
+    width: 20%;
+}
+
+@media (max-width:500px) {
+    .container {
+        width: 100%;
+    }
+    .send-container {
+        justify-content: space-between;
+    }
+    .send-container form {
+        width: 98%;
+    }
+    .btn {
+        width: 25%;
+    }
+}

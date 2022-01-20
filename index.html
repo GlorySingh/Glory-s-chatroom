@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="http://localhost:4000/socket.io/socket.io.js"></script>
+    <!-- defer allows the JavaScript to wait till the complete DOM is loaded in the webpage -->
+    <script defer src="client.js"></script>
+    <title>Glory's Chatroom</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="logo" srcset="" />
+      </div>
+      <h1>Welcome to Glory's chatroom.</h1>
+      <!-- Empty chat container to be dynamically populated by JavaScript -->
+      <div class="chat-container"></div> 
+    </div>
+
+    <div class="send-container">
+      <form action="#" id="send-form">
+        <input type="text" name="message" id="msg" placeholder="Type message here">
+        <button class="btn" type="submit" id="send-btn">Send</button>
+      </form>
+    </div>
+  </body>
+</html>
